@@ -1,0 +1,114 @@
+/* Import Google Fonts and Remixicon */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css');
+
+/* Global styles moved from <style> */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* (Include any additional styles from the original <style> block here.) */
+
+
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6, .serif {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #9a8478;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .material-card {
+            transition: transform 0.5s ease;
+        }
+        
+        .material-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .collection-item {
+            overflow: hidden;
+        }
+        
+        .collection-item img {
+            transition: transform 0.7s ease;
+        }
+        
+        .collection-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .product-card {
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-quick-view {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .product-card:hover .product-quick-view {
+            opacity: 1;
+        }
+        
+        input[type="email"] {
+            border: none;
+            border-bottom: 1px solid #9a8478;
+            outline: none;
+            background: transparent;
+        }
+        
+        .subscribe-btn {
+            transition: background-color 0.3s ease;
+        }
+        
+        .social-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            transition: background-color 0.3s ease;
+        }
+        
+        .header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+    

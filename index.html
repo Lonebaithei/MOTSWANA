@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉCLAT | Luxury Clothing</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#9a8478',secondary:'#e9e5e0'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body class="bg-white">
+    <!-- Header Navigation -->
+    <header class="header w-full py-6 px-8">
+        <div class="container mx-auto flex items-center justify-between">
+            <nav class="hidden md:flex items-center space-x-12">
+                <a href="#collections" class="nav-link serif text-lg tracking-wide text-gray-800 hover:text-primary">Collections</a>
+                <a href="#about" class="nav-link serif text-lg tracking-wide text-gray-800 hover:text-primary">About</a>
+            </nav>
+            
+            <div class="logo text-center">
+                <a href="#" class="font-['Pacifico'] text-3xl text-gray-900">logo</a>
+            </div>
+            
+            <div class="hidden md:flex items-center space-x-12">
+                <a href="#shop" class="nav-link serif text-lg tracking-wide text-gray-800 hover:text-primary">Shop</a>
+                <div class="flex items-center space-x-6">
+                    <a href="#search" class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-search-line text-gray-800 hover:text-primary"></i>
+                    </a>
+                    <a href="#cart" class="w-6 h-6 flex items-center justify-center">
+                        <i class="ri-shopping-bag-line text-gray-800 hover:text-primary"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:hidden flex items-center">
+                <button class="w-6 h-6 flex items-center justify-center">
+                    <i class="ri-menu-line text-xl text-gray-800"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden" style="background-image: url('https://readdy.ai/api/search-image?query=high-fashion%20elegant%20female%20model%20wearing%20minimalist%20luxury%20clothing%2C%20standing%20gracefully%20against%20a%20neutral%20beige%20background%2C%20soft%20natural%20lighting%2C%20professional%20fashion%20photography%2C%20high-end%20editorial%20style%2C%20muted%20color%20palette%2C%20sophisticated%20composition%2C%20shallow%20depth%20of%20field%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship&width=1920&height=1080&seq=hero1&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center px-6 max-w-4xl">
+                <h1 class="serif text-5xl md:text-7xl font-light text-white leading-tight mb-6">Timeless Elegance, Modern Sophistication</h1>
+                <p class="text-white text-lg md:text-xl mb-10 max-w-2xl mx-auto">Discover our curated collection of luxury garments crafted with exceptional materials and unparalleled attention to detail.</p>
+                <a href="#collections" class="inline-block px-10 py-3 border border-white text-white hover:bg-white hover:text-gray-900 transition-all duration-300 serif tracking-wider text-lg !rounded-button whitespace-nowrap">Explore Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections Grid -->
+    <section id="collections" class="py-24 px-8">
+        <div class="container mx-auto">
+            <h2 class="serif text-4xl md:text-5xl font-light text-center mb-16">Featured Collections</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="collection-item relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=elegant%20woman%20wearing%20minimalist%20white%20luxury%20dress%2C%20neutral%20beige%20background%2C%20professional%20fashion%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20editorial%20style%2C%20muted%20color%20palette%2C%20sophisticated%20composition%2C%20shallow%20depth%20of%20field%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20serene%20expression&width=800&height=1000&seq=col1&orientation=portrait" alt="Summer Collection" class="w-full h-[600px] object-cover object-top">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end p-8 transition-opacity duration-300">
+                        <div>
+                            <h3 class="serif text-3xl font-light text-white mb-2">Summer Essentials</h3>
+                            <a href="#" class="text-white underline underline-offset-4 hover:text-primary transition-colors">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-item relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=elegant%20man%20wearing%20minimalist%20luxury%20suit%2C%20neutral%20beige%20background%2C%20professional%20fashion%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20editorial%20style%2C%20muted%20color%20palette%2C%20sophisticated%20composition%2C%20shallow%20depth%20of%20field%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20confident%20pose&width=800&height=1000&seq=col2&orientation=portrait" alt="Formal Collection" class="w-full h-[600px] object-cover object-top">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end p-8 transition-opacity duration-300">
+                        <div>
+                            <h3 class="serif text-3xl font-light text-white mb-2">Formal Attire</h3>
+                            <a href="#" class="text-white underline underline-offset-4 hover:text-primary transition-colors">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-item relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=elegant%20woman%20wearing%20minimalist%20luxury%20casual%20outfit%2C%20neutral%20beige%20background%2C%20professional%20fashion%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20editorial%20style%2C%20muted%20color%20palette%2C%20sophisticated%20composition%2C%20shallow%20depth%20of%20field%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20relaxed%20pose&width=800&height=1000&seq=col3&orientation=portrait" alt="Casual Collection" class="w-full h-[600px] object-cover object-top">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end p-8 transition-opacity duration-300">
+                        <div>
+                            <h3 class="serif text-3xl font-light text-white mb-2">Casual Elegance</h3>
+                            <a href="#" class="text-white underline underline-offset-4 hover:text-primary transition-colors">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-item relative overflow-hidden">
+                    <img src="https://readdy.ai/api/search-image?query=elegant%20woman%20wearing%20minimalist%20luxury%20evening%20gown%2C%20neutral%20beige%20background%2C%20professional%20fashion%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20editorial%20style%2C%20muted%20color%20palette%2C%20sophisticated%20composition%2C%20shallow%20depth%20of%20field%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20graceful%20pose&width=800&height=1000&seq=col4&orientation=portrait" alt="Evening Collection" class="w-full h-[600px] object-cover object-top">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 flex items-end p-8 transition-opacity duration-300">
+                        <div>
+                            <h3 class="serif text-3xl font-light text-white mb-2">Evening Wear</h3>
+                            <a href="#" class="text-white underline underline-offset-4 hover:text-primary transition-colors">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Premium Materials Section -->
+    <section class="py-24 bg-secondary bg-opacity-20">
+        <div class="container mx-auto px-8">
+            <h2 class="serif text-4xl md:text-5xl font-light text-center mb-16">Premium Materials</h2>
+            
+            <div class="relative">
+                <div class="flex overflow-x-auto pb-8 hide-scrollbar space-x-8">
+                    <div class="material-card flex-none w-80 bg-white rounded shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=close-up%20of%20premium%20silk%20fabric%20texture%2C%20neutral%20beige%20color%2C%20soft%20natural%20lighting%2C%20detailed%20textile%20photography%2C%20luxury%20material%2C%20high-end%20fashion%20fabric%2C%20elegant%20draping%2C%20fine%20weave%20pattern%20visible%2C%20sophisticated%20and%20minimalist&width=600&height=400&seq=mat1&orientation=landscape" alt="Silk" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="serif text-2xl font-light mb-2">Pure Silk</h3>
+                            <p class="text-gray-600">Exquisite silk sourced from the finest producers, offering unparalleled softness and natural sheen that elevates every garment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="material-card flex-none w-80 bg-white rounded shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=close-up%20of%20premium%20cashmere%20fabric%20texture%2C%20neutral%20cream%20color%2C%20soft%20natural%20lighting%2C%20detailed%20textile%20photography%2C%20luxury%20material%2C%20high-end%20fashion%20fabric%2C%20elegant%20draping%2C%20fine%20weave%20pattern%20visible%2C%20sophisticated%20and%20minimalist&width=600&height=400&seq=mat2&orientation=landscape" alt="Cashmere" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="serif text-2xl font-light mb-2">Mongolian Cashmere</h3>
+                            <p class="text-gray-600">Luxuriously soft cashmere from Mongolia's high plateaus, known for exceptional warmth and lightweight comfort.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="material-card flex-none w-80 bg-white rounded shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=close-up%20of%20premium%20linen%20fabric%20texture%2C%20neutral%20light%20gray%20color%2C%20soft%20natural%20lighting%2C%20detailed%20textile%20photography%2C%20luxury%20material%2C%20high-end%20fashion%20fabric%2C%20elegant%20draping%2C%20fine%20weave%20pattern%20visible%2C%20sophisticated%20and%20minimalist&width=600&height=400&seq=mat3&orientation=landscape" alt="Linen" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="serif text-2xl font-light mb-2">European Linen</h3>
+                            <p class="text-gray-600">Breathable, sustainable linen cultivated in Europe's ideal climate, creating fabrics with exceptional texture and durability.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="material-card flex-none w-80 bg-white rounded shadow-sm">
+                        <img src="https://readdy.ai/api/search-image?query=close-up%20of%20premium%20merino%20wool%20fabric%20texture%2C%20neutral%20taupe%20color%2C%20soft%20natural%20lighting%2C%20detailed%20textile%20photography%2C%20luxury%20material%2C%20high-end%20fashion%20fabric%2C%20elegant%20draping%2C%20fine%20weave%20pattern%20visible%2C%20sophisticated%20and%20minimalist&width=600&height=400&seq=mat4&orientation=landscape" alt="Merino Wool" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="serif text-2xl font-light mb-2">Merino Wool</h3>
+                            <p class="text-gray-600">Ultra-fine merino wool that offers remarkable temperature regulation and a silky-smooth feel against the skin.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="absolute top-1/2 -left-4 transform -translate-y-1/2 hidden md:block">
+                    <button id="prev-material" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center !rounded-button whitespace-nowrap">
+                        <i class="ri-arrow-left-s-line text-gray-800"></i>
+                    </button>
+                </div>
+                
+                <div class="absolute top-1/2 -right-4 transform -translate-y-1/2 hidden md:block">
+                    <button id="next-material" class="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center !rounded-button whitespace-nowrap">
+                        <i class="ri-arrow-right-s-line text-gray-800"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Collection Showcase -->
+    <section id="shop" class="py-24 px-8">
+        <div class="container mx-auto">
+            <h2 class="serif text-4xl md:text-5xl font-light text-center mb-16">Latest Collection</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20minimalist%20white%20silk%20blouse%20on%20neutral%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20fashion%20item%2C%20clean%20composition%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20luxury%20clothing%20item%20isolated&width=600&height=800&seq=prod1&orientation=portrait" alt="Silk Blouse" class="w-full h-[400px] object-cover object-top">
+                        <div class="product-quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <button class="px-6 py-2 bg-white text-gray-900 hover:bg-primary hover:text-white transition-colors serif tracking-wider !rounded-button whitespace-nowrap">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="serif text-xl font-light mb-1">Silk Cascade Blouse</h3>
+                        <p class="text-gray-600 mb-2">Pure Silk</p>
+                        <p class="serif text-lg">$395</p>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20minimalist%20black%20wool%20trousers%20on%20neutral%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20fashion%20item%2C%20clean%20composition%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20luxury%20clothing%20item%20isolated&width=600&height=800&seq=prod2&orientation=portrait" alt="Wool Trousers" class="w-full h-[400px] object-cover object-top">
+                        <div class="product-quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <button class="px-6 py-2 bg-white text-gray-900 hover:bg-primary hover:text-white transition-colors serif tracking-wider !rounded-button whitespace-nowrap">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="serif text-xl font-light mb-1">Tailored Wool Trousers</h3>
+                        <p class="text-gray-600 mb-2">Italian Wool</p>
+                        <p class="serif text-lg">$485</p>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20minimalist%20beige%20cashmere%20sweater%20on%20neutral%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20fashion%20item%2C%20clean%20composition%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20luxury%20clothing%20item%20isolated&width=600&height=800&seq=prod3&orientation=portrait" alt="Cashmere Sweater" class="w-full h-[400px] object-cover object-top">
+                        <div class="product-quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <button class="px-6 py-2 bg-white text-gray-900 hover:bg-primary hover:text-white transition-colors serif tracking-wider !rounded-button whitespace-nowrap">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="serif text-xl font-light mb-1">Cashmere Crewneck</h3>
+                        <p class="text-gray-600 mb-2">Mongolian Cashmere</p>
+                        <p class="serif text-lg">$525</p>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20minimalist%20cream%20linen%20dress%20on%20neutral%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20fashion%20item%2C%20clean%20composition%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20luxury%20clothing%20item%20isolated&width=600&height=800&seq=prod4&orientation=portrait" alt="Linen Dress" class="w-full h-[400px] object-cover object-top">
+                        <div class="product-quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <button class="px-6 py-2 bg-white text-gray-900 hover:bg-primary hover:text-white transition-colors serif tracking-wider !rounded-button whitespace-nowrap">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="serif text-xl font-light mb-1">Linen Midi Dress</h3>
+                        <p class="text-gray-600 mb-2">European Linen</p>
+                        <p class="serif text-lg">$445</p>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20minimalist%20navy%20blue%20silk%20evening%20gown%20on%20neutral%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20fashion%20item%2C%20clean%20composition%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20luxury%20clothing%20item%20isolated&width=600&height=800&seq=prod5&orientation=portrait" alt="Evening Gown" class="w-full h-[400px] object-cover object-top">
+                        <div class="product-quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <button class="px-6 py-2 bg-white text-gray-900 hover:bg-primary hover:text-white transition-colors serif tracking-wider !rounded-button whitespace-nowrap">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="serif text-xl font-light mb-1">Silk Evening Gown</h3>
+                        <p class="text-gray-600 mb-2">Pure Silk</p>
+                        <p class="serif text-lg">$1,295</p>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white">
+                    <div class="relative overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20minimalist%20camel%20cashmere%20coat%20on%20neutral%20background%2C%20professional%20product%20photography%2C%20soft%20natural%20lighting%2C%20high-end%20fashion%20item%2C%20clean%20composition%2C%20showcasing%20premium%20fabric%20texture%20and%20craftsmanship%2C%20luxury%20clothing%20item%20isolated&width=600&height=800&seq=prod6&orientation=portrait" alt="Cashmere Coat" class="w-full h-[400px] object-cover object-top">
+                        <div class="product-quick-view absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <button class="px-6 py-2 bg-white text-gray-900 hover:bg-primary hover:text-white transition-colors serif tracking-wider !rounded-button whitespace-nowrap">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="p-4 text-center">
+                        <h3 class="serif text-xl font-light mb-1">Cashmere Overcoat</h3>
+                        <p class="text-gray-600 mb-2">Italian Cashmere</p>
+                        <p class="serif text-lg">$1,850</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-16">
+                <a href="#" class="inline-block px-10 py-3 border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-300 serif tracking-wider !rounded-button whitespace-nowrap">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story Section -->
+    <section id="about" class="py-24 px-8 bg-secondary bg-opacity-10">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="serif text-4xl md:text-5xl font-light mb-8">Our Philosophy</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">Founded in 2015, our atelier was born from a passion for timeless design and exceptional craftsmanship. We believe that luxury is not about excess, but about the perfect balance of form and function.</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">Each piece in our collection is meticulously crafted by skilled artisans using only the finest materials sourced from around the world. We embrace slow fashion principles, creating garments that transcend seasonal trends and become cherished wardrobe staples.</p>
+                    <p class="text-gray-700 mb-10 leading-relaxed">Our commitment to ethical production and sustainability guides every decision we make, from fabric selection to manufacturing processes. We believe that true luxury must respect both people and planet.</p>
+                    <a href="#" class="inline-block px-10 py-3 border border-primary text-primary hover:bg-primary hover:text-white transition-all duration-300 serif tracking-wider !rounded-button whitespace-nowrap">Learn More</a>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <img src="https://readdy.ai/api/search-image?query=elegant%20fashion%20atelier%20interior%2C%20artisans%20working%20on%20luxury%20garments%2C%20neutral%20color%20palette%2C%20soft%20natural%20lighting%2C%20high-end%20fashion%20workshop%2C%20sophisticated%20and%20minimalist%20space%2C%20premium%20fabrics%20visible%2C%20craftsmanship%20in%20action%2C%20professional%20fashion%20photography%20style&width=800&height=600&seq=about&orientation=landscape" alt="Our Atelier" class="w-full h-auto rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section class="py-24 px-8">
+        <div class="container mx-auto max-w-2xl text-center">
+            <h2 class="serif text-4xl font-light mb-6">Join Our Community</h2>
+            <p class="text-gray-600 mb-10">Subscribe to receive exclusive updates, early access to new collections, and styling inspiration.</p>
+            
+            <form class="flex flex-col md:flex-row gap-4 justify-center">
+                <div class="flex-grow">
+                    <input type="email" placeholder="Your email address" class="w-full px-4 py-3 bg-transparent border-b border-primary focus:border-gray-900 transition-colors">
+                </div>
+                <button type="submit" class="subscribe-btn px-8 py-3 bg-primary text-white hover:bg-gray-900 transition-colors serif tracking-wider !rounded-button whitespace-nowrap">Subscribe</button>
+            </form>
+            
+            <p class="text-gray-500 text-sm mt-6">By subscribing, you agree to our <a href="#" class="underline hover:text-primary">Privacy Policy</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-16 px-8">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="mb-6">
+                        <a href="#" class="font-['Pacifico'] text-2xl text-gray-900">logo</a>
+                    </div>
+                    <p class="text-gray-600 mb-6">Timeless elegance for the modern individual. Crafted with care, designed to last.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:border-primary hover:text-primary">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:border-primary hover:text-primary">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+                        <a href="#" class="social-icon w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 text-gray-600 hover:border-primary hover:text-primary">
+                            <i class="ri-pinterest-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="serif text-lg font-medium mb-6">Shop</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Women's Collection</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Men's Collection</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Accessories</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="serif text-lg font-medium mb-6">About</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Our Story</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Craftsmanship</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Sustainability</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Press</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="serif text-lg font-medium mb-6">Customer Care</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Contact Us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Shipping & Returns</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Care Guide</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-16 pt-8 border-t border-gray-200">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy; 2025 ÉCLAT. All rights reserved.</p>
+                    
+                    <div class="flex items-center space-x-6">
+                        <a href="#" class="text-gray-500 text-sm hover:text-primary">Privacy Policy</a>
+                        <a href="#" class="text-gray-500 text-sm hover:text-primary">Terms of Service</a>
+                        <div class="flex items-center space-x-3">
+                            <i class="ri-visa-line text-gray-500"></i>
+                            <i class="ri-mastercard-line text-gray-500"></i>
+                            <i class="ri-paypal-line text-gray-500"></i>
+                            <i class="ri-apple-fill text-gray-500"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script id="header-scroll">
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('.header');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+    <script id="materials-carousel">
+        document.addEventListener('DOMContentLoaded', function() {
+            const prevButton = document.getElementById('prev-material');
+            const nextButton = document.getElementById('next-material');
+            const carousel = document.querySelector('.hide-scrollbar');
+            
+            if (prevButton && nextButton && carousel) {
+                nextButton.addEventListener('click', function() {
+                    carousel.scrollBy({ left: 320, behavior: 'smooth' });
+                });
+                
+                prevButton.addEventListener('click', function() {
+                    carousel.scrollBy({ left: -320, behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
